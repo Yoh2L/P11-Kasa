@@ -21,6 +21,7 @@ const Locations = () => {
 	useEffect(() => {
 		getData();
 	}, []);
+
 	return (
 		<section className="locationsGallery">
 			{data.map((data) => (

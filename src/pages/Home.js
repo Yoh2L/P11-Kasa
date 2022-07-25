@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "../components/Banner";
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Locations from "../components/Locations";
 
@@ -13,6 +14,9 @@ const Home = () => {
 			<main>
 				<Locations />
 			</main>
+			<footer>
+				<Footer />
+			</footer>
 		</div>
 	);
 };

@@ -11,6 +11,9 @@ const Navigation = () => {
 				<NavLink to="/about">
 					<li>à propos</li>
 				</NavLink>
+				<NavLink to="/location/c67ab8a7">
+					<li>Test loc</li>
+				</NavLink>
 			</ul>
 		</div>
 	);
