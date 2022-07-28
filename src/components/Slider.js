@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Slider = ({ loc }) => {
-	console.log(loc);
+	const [index, setIndex] = useState(0);
 	return (
 		<div>
-			<img className="sliderPic" src={loc.pictures[0]} alt="" />
+			<img className="sliderPic" src={loc[index]} alt="" />
 		</div>
 	);
 };

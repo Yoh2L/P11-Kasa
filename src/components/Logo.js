@@ -1,9 +1,10 @@
 import React from "react";
+import LogoKasa from "../assets/LOGO.png";
 
 const Logo = () => {
 	return (
 		<div className="logo">
-			<img src="./LOGO.png" alt="Logo Kasa" />
+			<img src={LogoKasa} alt="Logo Kasa" />
 		</div>
 	);
 };

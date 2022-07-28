@@ -1,4 +1,36 @@
-.sliderpic {
-	width: 1240px;
-	height: 415px;
+main {
+	display: flex;
+	flex-direction: column;
+	.sliderpic {
+		width: 1240px;
+		height: 415px;
+	}
+
+	.bio-location {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.bio-host {
+		display: flex;
+	}
+
+	ul {
+		display: flex;
+	}
+
+	.bio-tag-ratings {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.location-dropmenu {
+		display: flex;
+		width: 1240px;
+
+		div {
+			width: 100%;
+		}
+	}
 }
