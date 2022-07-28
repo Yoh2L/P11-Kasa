@@ -32,7 +32,7 @@ const Location = () => {
 			<header>
 				<Header />
 			</header>
-			<main>
+			<main className="main-location">
 				<Slider key={`slide-${loc.id}`} loc={loc.pictures} />
 				<section>
 					<div className="bio-location">
