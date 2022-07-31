@@ -6,17 +6,17 @@ const Navigation = () => {
 		<nav className="navigation">
 			<NavLink
 				to="/"
-				style={({ isActive }) => ({
-					border: isActive ? "#2px solid $color-1" : "",
-				})}
-				className="navbar__link"
+				className={(navData) =>
+					`navbar__link ${navData.isActive ? "navbar_link--active" : ""}`
+				}
 			>
 				Accueil
 			</NavLink>
 			<NavLink
 				to="/about"
-				activeClassName="navbar__link--active"
-				className="navbar__link"
+				className={(navData) =>
+					`navbar__link ${navData.isActive ? "navbar_link--active" : ""}`
+				}
 			>
 				A propos
 			</NavLink>

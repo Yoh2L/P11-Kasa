@@ -22,3 +22,36 @@
 		font-size: 18px;
 	}
 }
+
+@media screen and (max-width: $breakpoint-PC) {
+	.main-error {
+		gap: 3rem;
+		.error-nbr {
+			font-size: 250px;
+		}
+		.error-oups {
+			text-align: center;
+			font-size: 24px;
+		}
+		.error-return {
+			font-size: 20px;
+		}
+	}
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+	.main-error {
+		gap: 3rem;
+		.error-nbr {
+			font-size: 150px;
+		}
+		.error-oups {
+			text-align: center;
+			font-size: 18px;
+			width: 60%;
+		}
+		.error-return {
+			font-size: 14px;
+		}
+	}
+}

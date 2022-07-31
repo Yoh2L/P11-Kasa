@@ -5,12 +5,7 @@ const Locations = () => {
 	const [data, setData] = useState([]);
 
 	const getData = () => {
-		fetch("db.json", {
-			headers: {
-				"Content-Type": "application/json",
-				Accept: "application/json",
-			},
-		})
+		fetch("./db.json")
 			.then(function (response) {
 				return response.json();
 			})

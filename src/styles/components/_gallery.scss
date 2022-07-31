@@ -36,3 +36,28 @@
 		}
 	}
 }
+
+@media screen and (max-width: $breakpoint-PC) {
+	.locationsGallery {
+		gap: 1rem;
+		padding: 1rem;
+		width: 90%;
+		margin: 0 auto;
+
+		.article {
+			width: 40%;
+		}
+	}
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+	.locationsGallery {
+		flex-wrap: nowrap;
+		flex-direction: column;
+
+		.article {
+			width: 100%;
+			height: 260px;
+		}
+	}
+}

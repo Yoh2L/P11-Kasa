@@ -29,3 +29,33 @@
 		border-radius: 10px;
 	}
 }
+
+@media screen and (max-width: $breakpoint-PC) {
+	.main-about {
+		width: 90%;
+		margin: 1rem auto;
+
+		.dropmenu {
+			width: 80%;
+		}
+	}
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+	.main-about {
+		width: 90%;
+		margin: 1rem auto;
+
+		.dropmenu {
+			width: 100%;
+		}
+
+		.dropheader {
+			font-size: 13px;
+		}
+
+		.dropmenu-expanded {
+			font-size: 12px;
+		}
+	}
+}

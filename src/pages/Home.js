@@ -7,7 +7,7 @@ import Locations from "../components/Locations";
 const Home = () => {
 	return (
 		<div>
-			<header>
+			<header className="header--home">
 				<Header />
 				<Banner />
 			</header>

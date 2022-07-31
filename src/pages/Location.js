@@ -4,6 +4,7 @@ import DropMenu from "../components/DropMenu";
 import Header from "../components/Header";
 import Rating from "../components/Rating";
 import Slider from "../components/Slider";
+import DropMenuLi from "../components/DropMenuLi";
 
 const Location = () => {
 	const [loc, setLoc] = useState({
@@ -16,7 +17,7 @@ const Location = () => {
 	const { id } = useParams();
 
 	useEffect(() => {
-		fetch("/db.json")
+		fetch("../db.json")
 			.then((response) => response.json())
 			.then((data) => {
 				const loca = data.find((item) => item.id === id);
@@ -27,8 +28,10 @@ const Location = () => {
 			.catch((error) => console.log("err: ", error));
 	});
 
+	const nameHost = loc.host.name.split(" ");
+
 	return (
-		<div>
+		<div className="location--page">
 			<header>
 				<Header />
 			</header>
@@ -41,7 +44,11 @@ const Location = () => {
 							<p>{loc.location}</p>
 						</div>
 						<div className="bio-host">
-							<p>{loc.host.name}</p>
+							<div className="bio-name">
+								<p>{nameHost[0]}</p>
+								<p>{nameHost[1]}</p>
+							</div>
+
 							<img src={loc.host.picture} alt="Profil de l'hôte" />
 						</div>
 					</div>
@@ -60,7 +67,7 @@ const Location = () => {
 							<DropMenu title="Description" content={loc.description} />
 						</div>
 						<div>
-							<DropMenu title="Equipements" content={loc.equipments} />
+							<DropMenuLi title="Equipements" content={loc.equipments} />
 						</div>
 					</div>
 				</section>

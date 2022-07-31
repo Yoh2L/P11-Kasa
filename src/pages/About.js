@@ -7,7 +7,7 @@ import Header from "../components/Header";
 const About = () => {
 	return (
 		<div>
-			<header>
+			<header className="header--about">
 				<Header />
 				<BannerAbout />
 			</header>

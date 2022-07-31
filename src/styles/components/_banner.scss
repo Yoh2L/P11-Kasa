@@ -23,3 +23,62 @@
 		opacity: 0.5;
 	}
 }
+
+.bannerAbout {
+	border-radius: 25px;
+	overflow: hidden;
+}
+
+@media screen and (max-width: $breakpoint-PC) {
+	.header--home {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.header--about {
+		width: 90%;
+		margin: auto;
+	}
+
+	.header--error {
+		width: 90%;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: $breakpoint-mobile) {
+	.header--home {
+		width: 380px;
+		margin: 0 auto;
+	}
+
+	.header--about {
+		width: 380px;
+		margin: auto;
+	}
+
+	.header--error {
+		width: 380px;
+		margin: auto;
+	}
+
+	.banner {
+		color: white;
+		background: black;
+		overflow: hidden;
+		height: 111px;
+		margin: 10px 0;
+		border-radius: 15px;
+
+		.banner_slogan {
+			font-family: $font-1;
+			font-weight: 400;
+			font-size: 24px;
+		}
+
+		.banner_img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

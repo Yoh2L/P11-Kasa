@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const Error = () => {
 	return (
 		<div>
-			<header>
+			<header className="header--error">
 				<Header />
 			</header>
 			<main className="main-error">

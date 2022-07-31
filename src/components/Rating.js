@@ -12,7 +12,7 @@ const Rating = ({ rating }) => {
 		else stars.push(<img src={greyStar} alt="empty-star" key={i} />);
 	}
 
-	return <div>{stars}</div>;
+	return <div className="stars--rating">{stars}</div>;
 };
 
 export default Rating;

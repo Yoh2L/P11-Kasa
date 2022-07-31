@@ -1,13 +1,10 @@
 import React from "react";
+import bannerAbout from "../assets/about_kasa-bg.png";
 
 const BannerAbout = () => {
 	return (
 		<div className="bannerAbout">
-			<img
-				className="banner_img"
-				src="./about_kasa-bg.png"
-				alt="Banniere à propos"
-			/>
+			<img className="banner_img" src={bannerAbout} alt="Banniere à propos" />
 		</div>
 	);
 };
